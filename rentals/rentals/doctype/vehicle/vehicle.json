@@ -1,0 +1,112 @@
+{
+ "actions": [],
+ "allow_guest_to_view": 1,
+ "autoname": "autoincrement",
+ "creation": "2024-11-22 15:41:26.891112",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "title",
+  "make",
+  "model",
+  "year",
+  "column_break_jswq",
+  "license",
+  "color",
+  "read_only",
+  "published",
+  "route",
+  "insurance_expiry"
+ ],
+ "fields": [
+  {
+   "fieldname": "model",
+   "fieldtype": "Data",
+   "label": "Model"
+  },
+  {
+   "fieldname": "year",
+   "fieldtype": "Int",
+   "label": "Year",
+   "non_negative": 1
+  },
+  {
+   "fieldname": "column_break_jswq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "license",
+   "fieldtype": "Data",
+   "label": "License"
+  },
+  {
+   "fieldname": "color",
+   "fieldtype": "Data",
+   "label": "Color"
+  },
+  {
+   "default": "cool display of uneditable text",
+   "fieldname": "read_only",
+   "fieldtype": "Read Only",
+   "label": "read only"
+  },
+  {
+   "fieldname": "title",
+   "fieldtype": "Data",
+   "label": "Title"
+  },
+  {
+   "fieldname": "make",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Make",
+   "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "published",
+   "fieldtype": "Check",
+   "label": "published"
+  },
+  {
+   "fieldname": "route",
+   "fieldtype": "Data",
+   "label": "route"
+  },
+  {
+   "fieldname": "insurance_expiry",
+   "fieldtype": "Date",
+   "label": "Insurance expiry"
+  }
+ ],
+ "has_web_view": 1,
+ "index_web_pages_for_search": 1,
+ "is_published_field": "published",
+ "links": [],
+ "modified": "2024-11-23 15:41:56.813756",
+ "modified_by": "Administrator",
+ "module": "Rentals",
+ "name": "vehicle",
+ "naming_rule": "Autoincrement",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "route": "cars",
+ "show_title_field_in_link": 1,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "title"
+}
